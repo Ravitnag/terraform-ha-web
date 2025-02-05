@@ -1,0 +1,33 @@
+# Terraform state files (contain sensitive info)
+*.tfstate
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Terraform crash logs
+crash.log
+
+# Terraform variables (if they contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Ignore overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore generated plan files
+*.tfplan
+
+# Ignore .terraform directory (contains cached provider binaries and modules)
+.terraform/
+.terraform.lock.hcl
+
+# Ignore sensitive SSH keys or credentials
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Ignore logs
+*.log
